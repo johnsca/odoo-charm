@@ -1,0 +1,8 @@
+[Unit]
+Description=Odoo server
+
+[Service]
+ExecStart=/usr/bin/odoo-server
+
+[Install]
+WantedBy=multi-user.target
