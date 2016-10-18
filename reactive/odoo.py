@@ -21,17 +21,18 @@ def update_conf(psql):
            owner='odoo',
            perms=0o400,
            context={
-               'db': psql,
+               'db': psql.master,
+               'conf': conf,
            })
     service_resume('odoo')
     service_restart('odoo')
-    status_set('ready', 'Ready')
+    status_set('active', 'Ready')
 
 @when('odoo.installed')
 @when_not('db.master.available')
 def blocked():
     log('Running blocked', 'DEBUG')
-    status_set('blocked', 'Waiting for DB')
+    status_set('blocked', 'Please link to a PostgreSQL service')
 
 @when('db.connected')
 def request_db(pgsql):
@@ -45,12 +46,10 @@ def install_odoo():
     for path in ['/opt/odoo', '/opt/odoo/data', '/opt/odoo/addons']:
         if not os.path.exists(path):
             os.mkdir(path) #, mode=0755)
-    if not service_available('odoo'):
-        render(source='odoo.unit',
-               target='/etc/systemd/system/odoo.service',
-               context={
-                   'conf': config(),
-               })
+    render(source='odoo.unit',
+           target='/etc/systemd/system/odoo.service',
+           context={
+                'conf': config(),
+           })
     service_pause('odoo')
     set_state('odoo.installed')
-    status_set('blocked', 'Waiting for DB')
