@@ -6,3 +6,4 @@ options:
     apt:
         packages:
             - odoo
+repo: "https://github.com/credativUK/odoo-charm"

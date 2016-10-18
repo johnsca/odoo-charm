@@ -1,7 +1,7 @@
 options:
   install_sources:
     default: |
-      - deb http://nightly.odoo.com/9.0/nightly/deb/ ./
+      - deb http://nightly.odoo.com/10.0/nightly/deb/ ./
   install_keys:
     default: |
       - 8183CBB5
