@@ -2,7 +2,8 @@
 Description=Odoo server
 
 [Service]
-ExecStart=/usr/bin/odoo.py --config /etc/odoo/openerp-server.conf --logfile /var/log/odoo/odoo-server.log
+User=odoo
+ExecStart=/usr/bin/odoo --config /etc/odoo/openerp-server.conf --logfile /var/log/odoo/odoo-server.log
 
 [Install]
 WantedBy=multi-user.target

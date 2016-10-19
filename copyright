@@ -1,0 +1,8 @@
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Odoo Charm
+Upstream-Contact: Ondřej Kuzník <ondrej.kuznik@credativ.co.uk>
+Source: https://github.com/credativUK/odoo-charm
+
+Files: *
+Copyright: 2016 credativ ltd.
+License: GPL-3+

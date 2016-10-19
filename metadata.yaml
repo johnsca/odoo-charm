@@ -1,12 +1,12 @@
 name: odoo
 summary: Odoo ERP
-maintainer: Ondrej Kuznik <Ondrej.Kuznik@credativ.co.uk>
+maintainer: Ondřej Kuzník <ondrej.kuznik@credativ.co.uk>
 description: |
   <Multi-line description here>
 tags:
-  # Replace "misc" with one or more whitelisted tags from this list:
-  # https://jujucharms.com/docs/stable/authors-charm-metadata
-  - misc
+  - ecommerce
+  - cms
+  - social
 subordinate: false
 provides:
   webui:

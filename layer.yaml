@@ -1,6 +1,7 @@
 includes:
     - layer:basic
     - layer:apt
+    - layer:nginx
     - interface:pgsql
 options:
     apt:

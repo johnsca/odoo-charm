@@ -4,6 +4,8 @@ options:
       - deb http://nightly.odoo.com/10.0/nightly/deb/ ./
   install_keys:
     default: |
-      - 8183CBB5
+      - DEF2A2198183CBB5
   dbname:
     default: odoo
+  port:
+    default: 80
