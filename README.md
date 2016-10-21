@@ -31,9 +31,15 @@ frontends to, or you can expose the charm and point your browser at the unit.
 Make sure you change the management password after you have created your
 database.
 
+# Configuration
+
+If you want to install a different Odoo version, all you need to do is set
+the `install_sources` configuration parameter to point to a different repository
+and possibly also change `install_keys` to set the relevant signing key as well.
+
 ## Known Limitations and Issues
 
-This charm does not support scale-out at the moment.
+This charm does not support scale-out yet.
 
 # Contact Information
 

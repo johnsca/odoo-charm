@@ -6,6 +6,10 @@ options:
     default: |
       - DEF2A2198183CBB5
   dbname:
+    description: The database name to request from PostgreSQL
+    type: string
     default: odoo
   port:
+    description: The port that Odoo should be accessible at
+    type: int
     default: 80

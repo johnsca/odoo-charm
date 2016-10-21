@@ -2,7 +2,15 @@ name: odoo
 summary: Odoo ERP
 maintainer: Ondřej Kuzník <ondrej.kuznik@credativ.co.uk>
 description: |
-  <Multi-line description here>
+  Odoo is a comprehensive open source management system. It has a large, active
+  community, which has developed modules to handle all facets of company
+  management.
+  These include, amongst others: Sales Management, CRM, e-commerce,
+  Manufacturing, Stock, Accounting, Human Resources, Project Management,
+  Logistics, Productivity and Document Management.
+  Odoo allows you to start easily with one module to fit a specific need then
+  add additional modules as and when you need them enabling you to have a
+  powerful feature rich Enterprise Resource Planner.
 tags:
   - ecommerce
   - cms
