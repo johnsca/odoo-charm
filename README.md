@@ -1,8 +1,6 @@
 Odoo charm
 ==========
 
-:Author: Ondřej Kuzník <ondrej.kuznik@credativ.co.uk>
-
 # Overview
 
 Odoo is a comprehensive open source management system. It has a large, active
@@ -42,6 +40,9 @@ and possibly also change `install_keys` to set the relevant signing key as well.
 This charm does not support scale-out yet.
 
 # Contact Information
+
+## Authors
+  - Ondřej Kuzník <ondrej.kuznik@credativ.co.uk>
 
 ## Odoo
 
