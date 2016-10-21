@@ -17,7 +17,7 @@ tags:
   - social
 subordinate: false
 provides:
-  webui:
+  website:
     interface: http
 requires:
   db:
