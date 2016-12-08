@@ -38,3 +38,7 @@ class TestCharm(unittest.TestCase):
         result = response.json()['result']
         self.assertIn('server_version_info', result)
         self.assertIsInstance(result['server_version_info'], list)
+
+        
+if __name__ == '__main__':
+    unittest.main()
